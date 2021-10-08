@@ -1,0 +1,125 @@
+body{
+    /* background-image: url(https://cdn.weatherapi.com/weather-widget/img/weatherapi-backgrounds/x4_widget3.png.pagespeed.ic.guryJeVUay.png) !important; */
+
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../images/rainy-day-3443977.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* overflow-y: hidden */
+    ;
+}
+/* .icone{
+    width: 100% !important;
+} */
+.navbar{
+    transition:  2s;
+}
+    .card-weather{
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+
+    }
+    #colorContainer{
+        position: fixed;
+        top: 25%;
+        left: 0;
+        z-index: 9999999;
+
+    }
+    .fa-cog{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .color-item{
+        height: 35px;
+        width: 35px;
+        background-color: blueviolet ;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .box-color{
+        background-color: rgba(0,0,0,0.5);
+
+    }
+    #loading{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 99999999999999999999999;
+    }
+
+
+#frame {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:50px;
+    height:50px;
+    margin:auto auto;
+    -webkit-animation: spin 3s linear infinite;
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(-360deg);}
+}
+.innerCircle {
+    position:absolute;
+    /* background:pink; */
+    top:0;
+    left:0px;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width:80px;
+    height:80px;
+    border-radius:100%;
+    z-index:1;
+}
+.circle {
+    position:absolute;
+    background:white;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width:100px;
+    height:100px;
+    border-radius:100%;
+}
+
+#frame .bar {
+    position:absolute;
+/*        background:black;*/
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width:10px;
+    height:200px;
+    z-index:10;
+}
+
+#frame .bar:before {
+    content:'';
+    position:absolute;
+    background:white;
+    width:10px;
+    height:30px;
+}
+
+.bar:nth-child(1) {-webkit-transform:rotate(40deg);}
+.bar:nth-child(2) {-webkit-transform:rotate(80deg);}
+.bar:nth-child(3) {-webkit-transform:rotate(120deg);}
+.bar:nth-child(4) {-webkit-transform:rotate(160deg);}
+.bar:nth-child(5) {-webkit-transform:rotate(200deg);}
+.bar:nth-child(6) {-webkit-transform:rotate(240deg);}
+.bar:nth-child(7) {-webkit-transform:rotate(280deg);}
+.bar:nth-child(8) {-webkit-transform:rotate(320deg);}
+.bar:nth-child(9) {-webkit-transform:rotate(360deg);}
